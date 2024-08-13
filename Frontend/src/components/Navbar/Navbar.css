@@ -60,3 +60,10 @@
     top: -8px;
     right: -8px;
 }
+
+@media (max-width: 1050pxx)
+{
+  .anvbar .logo{
+    width: 140px;
+  }
+}
