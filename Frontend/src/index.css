@@ -7,7 +7,9 @@
 /* ~~~~~~ Custom Scrollbar ~~~~~~~~~~~~~ */
 ::-webkit-scrollbar {
   width: 10px;
+  background: inherit;
 }
+
 ::-webkit-scrollbar-thumb {
   background: tomato;
   border-radius: 6px;

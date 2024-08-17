@@ -58,13 +58,17 @@
   cursor: pointer;
 }
 
-
 .footer hr{
     width: 100%;
     height: 2px;
     margin: 20px 0;
     background-color: grey;
     border: none;
+}
+
+.footer-content-left img{
+  mix-blend-mode: color-dodge;
+  /* background-color: transparent; */
 }
 
 @media (max-width: 750px)
