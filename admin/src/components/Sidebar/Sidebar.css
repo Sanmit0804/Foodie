@@ -25,6 +25,11 @@
   cursor: pointer;
 }
 
+.sidebar-option.active{
+  background-color: #fff;
+  border-color: tomato;
+}
+
 /* ============  Responsive ============= */
 
 @media (max-width: 900px) {
