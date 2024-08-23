@@ -4,7 +4,7 @@ import { assets } from "../../assets/assets";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const Add = ({url}) => {
+const Add = ({ url }) => {
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name: "",
@@ -37,7 +37,7 @@ const Add = ({url}) => {
         category: "Salad",
       });
       setImage(false);
-      toast.success(response.data.message)
+      toast.success(response.data.message);
     } else {
       toast.error(resopnse.data.message);
     }
