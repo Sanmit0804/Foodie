@@ -7,6 +7,6 @@ import {
 
 const cartRouter = express.Router();
 
-cartRouter.post("/", addToCart);
+cartRouter.post("/add", addToCart);
 cartRouter.post("/", removeFromCart);
 cartRouter.post("/", getCart);
