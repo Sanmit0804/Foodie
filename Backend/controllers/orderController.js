@@ -4,7 +4,7 @@ import stripe from "stripe";
 
 // Placing user order from content
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5173";
+  const frontend_url = "http://localhost:5174";
 
   try {
     const newOrder = new orderModel({
@@ -79,16 +79,28 @@ const userOrders = async (req, res) => {
   }
 };
 
-// Listing orders for admin panel
-
+// API for Listing orders for admin panel
 const listOrders = async (req, res) => {
   try {
     const orders = await orderModel.find({});
-    res.json({success: true, data: orders})
+    res.json({ success: true, data: orders });
   } catch (error) {
-    console.log(error)
-    res.json({success: false, message: "Error"})
+    console.log(error);
+    res.json({ success: false, message: "Error" });
   }
 };
 
-export { placeOrder, verifyOrder, userOrders, listOrders };
+// API For updating order status from admin panel
+const updateStatus = async (req, res) => {
+  try {
+    await orderModel.findByIdAndUpdate(req.body.orderId, {
+      status: req.body.status,
+    });
+    res.json({ success: true, message: "Status Updated" });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: "Error" });
+  }
+};
+
+export { placeOrder, verifyOrder, userOrders, listOrders, updateStatus };
