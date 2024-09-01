@@ -1,6 +1,6 @@
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/orderModel.js";
-import stripe from "stripe";
+// import stripe from "stripe";
 
 // Placing user order from content
 const placeOrder = async (req, res) => {
@@ -38,14 +38,14 @@ const placeOrder = async (req, res) => {
       quantity: 1,
     });
 
-    const session = await stripe.checkout.sessions.create({
-      line_items: line_items,
-      mode: "payment",
-      success_url: `${frontend_url}/verify?success=true&orderId=${newOrder._id}`,
-      cancel_url: `${frontend_url}/verify?success=false&orderId=${newOrder._id}`,
-    });
+    // const session = await stripe.checkout.sessions.create({
+    //   line_items: line_items,
+    //   mode: "payment",
+    //   success_url: `${frontend_url}/verify?success=true&orderId=${newOrder._id}`,
+    //   cancel_url: `${frontend_url}/verify?success=false&orderId=${newOrder._id}`,
+    // });
 
-    res.json({ success: true, session_url: session.url });
+    // res.json({ success: true, session_url: session.url });
   } catch (error) {
     console.log(error);
     res.json({ success: false, message: "Error" });
