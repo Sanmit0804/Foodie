@@ -216,7 +216,7 @@ const PlaceOrder = () => {
                 name="stripe"
                 id="stripe"
                 checked={selectedMethod === "stripe"}
-                onChange={handleCheckboxChange}
+                onChange={handleCheckboxChange} disabled
               />
               <label htmlFor="stripe"> &nbsp;Stripe (Credit / Debit)</label>
             </div>
