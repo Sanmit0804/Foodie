@@ -4,7 +4,8 @@ import userModel from "../models/orderModel.js";
 
 // Placing user order from content
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5174";
+  const frontend_url = "https://foodie-frontend-fc54.onrender.com/";
+  // const frontend_url = "http://localhost:5174";
 
   try {
     const newOrder = new orderModel({
