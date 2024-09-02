@@ -7,7 +7,6 @@ This repository contains the code for a full-stack web application built using t
 - [✨ Features](#features)
 - [🔧 Installation](#installation)
 - [🚀 Usage](#usage)
-- [📂 Project Structure](#project-structure)
 - [🔗 API Endpoints](#api-endpoints)
 - [🛠️ Technologies Used](#technologies-used)
 - [🤝 Contributing](#contributing)
@@ -35,7 +34,7 @@ This repository contains the code for a full-stack web application built using t
 
 ### Steps
 
-1. **🔗 Clone the repository:**
+1. 🔗 Clone the repository:
 
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
@@ -43,13 +42,13 @@ This repository contains the code for a full-stack web application built using t
 
 2. 📥 Install dependencies for the backend:
     ```
-    cd your-repo-name/backend
+    cd Foodie/Backend
     npm install
     ```
     
 3. 📥 Install dependencies for the frontend:
     ```
-    cd ../frontend
+    cd ../Frontend
     npm install
     ```
     
@@ -71,23 +70,23 @@ This repository contains the code for a full-stack web application built using t
 
 6. 🏃 Run the application:
 
-* 🖥️ Start the backend server:
-    ```
-    cd backend
-    npm run server
-    ```
-    
-* 🖥️ Start the frontend development server:
-    ```
-    cd ../frontend
-    npm run dev
-    ```
-    
-* 🖥️ Start the admin panel development server:
-    ```
-    cd ../admin
-    npm run dev
-    ```
+   * 🖥️ Start the backend server:
+       ```
+       cd backend
+       npm run server
+       ```
+       
+   * 🖥️ Start the frontend development server:
+       ```
+       cd ../frontend
+       npm run dev
+       ```
+       
+   * 🖥️ Start the admin panel development server:
+       ```
+       cd ../admin
+       npm run dev
+       ```
     
 7. 🌐 Access the application:
   
