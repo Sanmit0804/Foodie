@@ -10,7 +10,7 @@ const StoreContextProvider = (props) => {
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
   
-  const url = "https://foodie-backend-j2uh.onrender.com/";
+  const url = "https://foodie-backend-j2uh.onrender.com";
   // const url = "http://localhost:4000";
 
   const addToCart = async (itemId) => {
