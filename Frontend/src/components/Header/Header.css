@@ -2,7 +2,8 @@
     height: 34vw;
     margin: 30px auto;
     background: url('/header_img.png') no-repeat;
-    background-size: contain;
+    background-size: cover;
+    border-radius: 15px;
     position: relative;
 }
 
