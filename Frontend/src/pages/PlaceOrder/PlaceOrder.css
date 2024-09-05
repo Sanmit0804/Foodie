@@ -6,6 +6,13 @@
   margin-top: 100px;
 }
 
+@media (max-width: 800px) {
+  .place-order{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .place-order-left {
   width: 100%;
   max-width: max(30%, 500px);
