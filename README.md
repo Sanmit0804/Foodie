@@ -126,6 +126,10 @@ This repository contains the code for a full-stack web application built using t
 - **Admin Panel**: React, React Router, Toastify
 - **Database**: MongoDB
 
+## Original Links
+- Frontend: https://foodie-frontend-fc54.onrender.com/
+- Admin: https://foodie-admin-i1b6.onrender.com/
+
 ##  Contributing
 Contributions are welcome! Please fork this repository and submit a pull request for any changes you'd like to make.
 
