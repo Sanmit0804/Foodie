@@ -18,7 +18,10 @@
 /* Loading Effect */
 
 .loading {
-  font-size: 24px;
+  margin: auto;
+  margin-bottom: 200px;
+  height: 20px;
+  width: 200px;
   text-align: center;
   padding: 20px;
 }
