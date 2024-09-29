@@ -25,3 +25,13 @@
   text-align: center;
   padding: 20px;
 }
+
+.show-more-button{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: tomato;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
