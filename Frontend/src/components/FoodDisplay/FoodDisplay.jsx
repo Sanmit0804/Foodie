@@ -6,7 +6,6 @@ import FoodItem from '../FoodItem/FoodItem';
 const FoodDisplay = ({ category }) => {
   const { food_list } = useContext(StoreContext);
   const [loading, setLoading] = useState(true);
-  const [showItemCount, setShowItemCount] = useState(4);
 
   // Function to handle showing more items
   const handleShowMore = () => {
@@ -40,12 +39,11 @@ const FoodDisplay = ({ category }) => {
         </div>
       ) : (
         <div className="food-display-list">
-          {/* Display food items based on showItemCount */}
-          {food_list.map((item, index) => {
-            if (index < showItemCount) {
-              // Render only items that match the selected category or if 'All' is selected
-              if (category === "All" || category === item.category) {
-                return (
+
+          {food_list.length > 0 ? (
+            food_list.some(item => category === "All" || category === item.category) ? (
+              food_list.map((item, index) => (
+                (category === "All" || category === item.category) ? (
                   <FoodItem
                     key={index}
                     id={item._id}
@@ -54,18 +52,15 @@ const FoodDisplay = ({ category }) => {
                     price={item.price}
                     image={item.image}
                   />
-                );
-              }
-            }
-            return null;
-          })}
-
-          {/* Conditionally render 'Show More' button if there are more items to display */}
-          {showItemCount < food_list.length && (
-            <button className="show-more-button" onClick={handleShowMore}>
-              Show More...
-            </button>
+                ) : null
+              ))
+            ) : (
+              <p>No items available in {category}</p>
+            )
+          ) : (
+            <p>No items available</p>
           )}
+
         </div>
       )}
     </div>
