@@ -55,7 +55,7 @@ const FoodDisplay = ({ category }) => {
                 ) : null
               ))
             ) : (
-              <p>No items available in {category}</p>
+              <p>No items available in {category} category</p>
             )
           ) : (
             <p>No items available</p>
